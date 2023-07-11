@@ -9,3 +9,15 @@ contoh ambil id-gambar (idd) <br><br>
 $idd = $dx['entry'][0]['changes'][0]['value']['messages'][0]['image']['id']
 
 <img src='json.jpg'>
+
+<p>
+setelah medapatkan id-gambar, lakukan proses get ke ambil.php dengan bearer akun
+<pre>
+http://contoh.web.id/ambil.php?id=123456&bx=aaaaaaaaabbbbbbbbccccccccccc  
+</pre>
+jika berhasil maka hasilnya adalah link gambarnya 
+<pre>
+   {"url":"http://contoh.web.id/123456.jpg"}
+</pre> 
+  
+</p>
